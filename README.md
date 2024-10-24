@@ -5,7 +5,7 @@ I really love making playlists, but I'm also really lazy about it. For many year
 
 Last year, IFTTT started charging for this applet and apparently I'm also pretty cheap too when it comes to playlist making (I mean, as one should be...). So as an attempt to improve my python skills while productively procrastinating my dissertation, and also cope with no longer having a playlist output from all these now-normalized 'like' responses,  I decided to mess around with `spotipy`.
 
-Lastly, this is one of several 'fun' projects that I have been playing with in my free time for the purpose of improving my python skills. Sure, it essentially picks up an established practiced that I have had for the last ten years, in terms of shaping my engagement with the Spotify's interface with the specific intention of adding content through what is going on on the back end. These are habits that are difficult to break once deeply embedded into a relationship and routine. But more so, this is part of a larger trend in which I push myself to think more computationally about the problems, tedious and repetitive tasks, or ones that are just take up too much time in a packed schedule. As a result, I push myself to try new things and improve skills that will make my research easier (and sometimes a little more fun) in the process. 
+Lastly, this is one of several 'fun' projects that I have been playing with in my free time for the purpose of improving my python skills. Sure, it essentially picks up an established practiced that I have had for the last ten years, in terms of shaping my engagement with the Spotify's interface with the specific intention of adding content through what is going on on the back end. These are habits that are difficult to break once deeply embedded into a technology relationship and routine. But more so, this is part of a larger trend in which I push myself to think more computationally about the problems, tedious and repetitive tasks, or ones that are just take up too much time in a packed schedule. As a result, I push myself to try new things and improve skills that will make my research easier (and sometimes a little more fun) in the process. 
 
 ## What it can do
 - creates and/or updates a playlist for the current month
@@ -45,4 +45,8 @@ I need to write this out in some detail but the basics are:
     - you may need to modify this further based on what you have installed already
   - open `/bin/activate.csh` and set the path for your virtual environment under `setenv VIRTUAL_ENV`
   - `spotipy_test.py` is from `spotipy`'s materials to test
-  - run `update.py` and this will create a playlist for the current month if there isn't one yet, and then add all songs that you liked during that month. Or if there's already a playlist, it will update any songs that don't already appear for the current month. It will do this for the previous month as well. 
+  - run `update.py` and this will create a playlist for the current month if there isn't one yet, and then add all songs that you liked during that month. Or if there's already a playlist, it will update any songs that don't already appear for the current month. It will do this for the previous month as well.
+
+
+
+ Anyway, still working out a bunch of kinks with it and learning along the way, so always welcome to feedback!
