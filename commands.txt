@@ -1,0 +1,41 @@
+# notes from when I did the initial setup
+
+% set up virtual environment
+python3 -m venv playlist-env
+
+% activate venv
+source playlist-env/bin/activate
+
+% install spotipy and neccessary dependencies
+python3 -m pip install spotipy --upgrade pip
+
+% keys to be used to set environment variables
+
+SPOTIPY_CLIENT_ID = 'PUT CLIENT ID HERE'
+SPOTIPY_CLIENT_SECRET = 'PUT CLIENT SECRET HERE'
+SPOTIPY_REDIRECT_URI = 'https://localhost:8888/callback'
+
+% redirect uri calls back to once authentication has occurred-
+% localhost can have whatever port number you want (ex. 8888); local host is your machine
+
+% client id = identified application working with
+% secret code = password for that application
+% both of these are needed to authenticate and allow app to log in as me
+% to assign these credentials in the environ use export commant in terminal
+
+export SPOTIPY_CLIENT_ID=<CLIENT ID>
+export SPOTIPY_CLIENT_SECRET=<CLIENT SECRET>
+
+% to test to see if it worked use echo
+echo $SPOTIPY_CLIENT_ID
+
+% check items in directory to see where you are
+ls
+
+% change directory to env
+cd playlist-env
+
+% check items in directory to make sure in right place by running ls again
+
+% to run test to make sure if everything is working as it should
+python3 spotipy_test.py
